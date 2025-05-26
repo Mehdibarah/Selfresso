@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selfresso</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fffaf6; color: #2d2d2d; }
+    header {
+      background: #1e1e1e;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { font-family: 'Playfair Display', serif; font-size: 1.8rem; }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/featured/?coffee,barista') center/cover no-repeat;
+      padding: 5rem 2rem;
+      text-align: left;
+      color: white;
+    }
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      background: #f5e1d2;
+      color: #1e1e1e;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .section {
+      padding: 3rem 2rem;
+    }
+    .section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .about p {
+      max-width: 700px;
+      line-height: 1.6;
+    }
+    .diy-experience {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .diy-experience img {
+      width: 100%;
+      height: auto;
+    }
+    .diy-experience div {
+      text-align: center;
+      font-weight: bold;
+    }
+    .testimonial {
+      font-style: italic;
+      margin: 2rem 0;
+    }
+    .barista {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .barista img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SELFRESSO</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">DIY Zone</a>
+      <a href="#">Baristas</a>
+      <a href="#">Reserve</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Selfresso</h2>
+    <p>Brew It Yourself. Or Let Us Craft It For You</p>
+    <a class="btn" href="#">TRY THE EXPERIENCE</a>
+  </section>
+
+  <section class="section about">
+    <h3>About Us</h3>
+    <p>Selfresso is where innovation meets tradition. Here, you can either sit back and enjoy your handcrafted espresso—or step behind the bar and make it yourself.</p>
+  </section>
+
+  <section class="section">
+    <h3>DIY Experience</h3>
+    <div class="diy-experience">
+      <div><img src="https://via.placeholder.com/100" alt="Grinding Beans"><br>GRINDING BEANS</div>
+      <div><img src="https://via.placeholder.com/100" alt="Brew Ready"><br>BREW READY</div>
+      <div><img src="https://via.placeholder.com/100" alt="Steam the Milk"><br>STEAM THE MILK</div>
+      <div><img src="https://via.placeholder.com/100" alt="Relish the Brew"><br>RELISH THE BREW</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Meet Our Baristas</h3>
+    <blockquote class="testimonial">
+      “Watching guests make their first pour-over is pure magic.”
+    </blockquote>
+    <div class="barista">
+      <img src="https://via.placeholder.com/100" alt="Barista Leyla">
+      <span>– Leyla</span>
+    </div>
+  </section>
+</body>
+</html>
